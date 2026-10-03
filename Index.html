@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <!--Form header-->
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Fill in your details below in other to register.</p>
+    </header>
+    <!--part A: Student registration form-->
+    <main>
+        <!--part B: actions and methods-->
+        <form action="/register" method="post">
+
+            <label for="full_Name">Full Name :</label>
+            <input type="text" name="full_Name" placeholder="First Name" required>
+            
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" placeholder="Email" required>
+            
+            <br><br>
+
+            <label for="password">Password :</label>
+            <input type="password" name="password" placeholder="Password">
+            
+            <br><br>
+
+            <label for="Gender">Gender :</label><br>
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Female"> Female 
+            
+            <br><br>
+
+            <label for="Country">Country :</label>
+            <select name="Country" required>
+                <option value="NG">Nigeria</option>
+                <option value="GH">Ghana</option>
+                <option value="KE">Kenya</option>
+                <option value="SA">South Africa</option>
+            </select>
+
+            <br><br>
+            
+            <label for="About">About your self :</label>
+            <textarea name="About" placeholder="Tell us about yourself"></textarea>
+            
+            <br><br>
+
+            <label for="terms_and_conditions">Terms and Conditions :</label>
+            <input type="checkbox" name="terms_and_conditions" required>
+            <label for="terms_and_conditions">I agree to the terms and conditions</label>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+    
+</body>
+</html>
