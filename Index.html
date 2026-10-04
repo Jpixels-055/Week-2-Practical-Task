@@ -72,9 +72,31 @@
         <!--Part D: Explanation-->
         <article>
             <h2>What i learned</h2>
-            
+
             <h3>What does the action attribut do?</h3>
             <p>The <strong>Action</strong> attribute identifies the destination to which the form submission is sent.</p>
+
+
+            <h3>What does the method attribute do?</h3>
+            <p>The <strong>Method</strong> attribute specifies how the browser should submit the form data.</p>
+            
+
+            <h3>Why is GET commonly useful for a search form?</h3>
+            <p>The GET method appends the form data to the URL as a query string,
+            making it visible and shareable. This is useful for search forms because it allows users to 
+            bookmark or share the search results.</p>
+
+            <h3>Why might POST be used for a registration form?</h3>
+            <p>The POST method sends the form data in the body of the HTTP request,
+            making it more secure and suitable for sensitive information like passwords. 
+            This is why POST is often used for registration forms where user credentials are submitted.</p>
+
+            <h3>Does using POST automatically make information secure? Explain why or why not.</h3>
+            <p>No, using POST does not automatically make information secure. While POST sends data 
+            in the body of the HTTP request, making it less visible than GET, it does not inherently 
+            encrypt the data. Security depends on additional measures like HTTPS encryption and proper 
+            server-side handling of the submitted data.</p>
+
         </article>
     </main>
     
